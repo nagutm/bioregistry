@@ -24,7 +24,7 @@ def has_token() -> bool:
 
 def get_issues_with_pr(issue_ids: Iterable[int], token: Optional[str] = None) -> Set[int]:
     """Get the set of issues that are already closed by a pull request."""
-    pulls = list_pulls(owner="bioregistry", repo="bioregistry", token=token)
+    pulls = list_pulls(owner="nagutm", repo="bioregistry", token=token)
     return {
         issue_id
         for pull, issue_id in itt.product(pulls, issue_ids)
