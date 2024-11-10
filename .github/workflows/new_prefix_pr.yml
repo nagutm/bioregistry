@@ -27,12 +27,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Branch
         run: |
-          issue_number=$(echo $ISSUE_URL | grep -oE '[0-9]+$') # Extract issue number
+          issue_url="${{ github.event.issue.html_url }}"
+          issue_number=$(echo "$issue_url" | grep -oE '[0-9]+$')
           git checkout -b "create-pull-request/patch-$issue_number"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          branch-suffix: short-commit-hash
+          branch: "create-pull-request/patch-${{ steps.update.outputs.issue_number }}"
           labels: New,Prefix
           body: ${{ steps.update.outputs.BR_BODY }}
           title: ${{ steps.update.outputs.BR_TITLE }}
