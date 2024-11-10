@@ -25,6 +25,10 @@ jobs:
         run: python -m bioregistry.gh.new_prefix --github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Branch
+        run: |
+          issue_number=$(echo $ISSUE_URL | grep -oE '[0-9]+$') # Extract issue number
+          git checkout -b "create-pull-request/patch-$issue_number"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
