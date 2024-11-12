@@ -35,9 +35,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          branch-suffix: short-commit-hash
           branch: ${{ steps.create_branch.outputs.branch_name }}
           labels: New,Prefix
           body: ${{ steps.update.outputs.BR_BODY }}
-          title: ${{ steps.update.outputs.BR_TITLE }}
           title: ${{ steps.update.outputs.BR_TITLE }}
