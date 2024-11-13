@@ -23,8 +23,7 @@ jobs:
           script: |
             const issue = context.payload.issue;
             const hasRequiredLabels = issue.labels.some(label => label.name === "New") && issue.labels.some(label => label.name === "Prefix");
-            return { hasRequiredLabels };
-          result-encoding: string
+            core.setOutput("hasRequiredLabels", hasRequiredLabels ? 'true' : 'false');
       - name: End Workflow if Labels are Missing
         if: steps.check_labels.outputs.hasRequiredLabels == 'false'
         run: |
@@ -35,6 +34,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
+        if: steps.check_labels.outputs.hasRequiredLabels == 'true'
         run: pip install -e .[gha]
       - name: Update
         id: update
