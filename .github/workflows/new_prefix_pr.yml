@@ -14,6 +14,8 @@ jobs:
         python-version: [ "3.12" ]
     steps:
       - uses: actions/checkout@v2
+      - name: Delay to ensure labels are attached
+        run: sleep 10
       - name: Check Issue Labels
         id: check_labels
         uses: actions/github-script@v6
