@@ -42,16 +42,21 @@ jobs:
         run: python -m bioregistry.gh.new_prefix --github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check for Validation Errors
+        if: failure()
+        run: |
+          echo "Validation error detected. Ending workflow."
+          exit 1
       - name: Create Branch
         id: create_branch
-        if: steps.check_labels.outputs.hasRequiredLabels == 'true'
+        if: success() && steps.check_labels.outputs.hasRequiredLabels == 'true'
         run: |
           issue_url="${{ github.event.issue.html_url }}"
           issue_number=$(echo "$issue_url" | grep -oE '[0-9]+$') 
           branch_name="create-pull-request/patch-$issue_number"
           echo "::set-output name=branch_name::$branch_name" 
       - name: Create Pull Request
-        if: steps.check_labels.outputs.hasRequiredLabels == 'true'
+        if: success() && steps.check_labels.outputs.hasRequiredLabels == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           branch: ${{ steps.create_branch.outputs.branch_name }}

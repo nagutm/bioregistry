@@ -158,7 +158,7 @@ def get_new_prefix_issues(token: Optional[str] = None) -> Mapping[int, Resource]
             # to avoid any misunderstandings later
             resource = process_new_prefix_issue(issue_id, copy.deepcopy(resource_data))
         except Exception as e:
-            logger.warning("Error processing issue %s: %s", (issue_id, e))
+            logger.warning("Error processing issue %s: %s", issue_id, e)
             continue
         if resource is not None:
             rv[issue_id] = resource
