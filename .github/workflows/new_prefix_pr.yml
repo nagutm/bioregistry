@@ -24,7 +24,7 @@ jobs:
             return { hasRequiredLabels };
           result-encoding: string
       - name: End Workflow if Labels are Missing
-        if: steps.check_labels.outputs.hasRequiredLabels == "false"
+        if: steps.check_labels.outputs.hasRequiredLabels == 'false'
         run: |
           echo "Issue does not have 'New' and 'Prefix' labels. Ending workflow."
           exit 0
@@ -36,20 +36,20 @@ jobs:
         run: pip install -e .[gha]
       - name: Update
         id: update
-        if: steps.check_labels.outputs.hasRequiredLabels == "true"
+        if: steps.check_labels.outputs.hasRequiredLabels == 'true'
         run: python -m bioregistry.gh.new_prefix --github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Branch
         id: create_branch
-        if: steps.check_labels.outputs.hasRequiredLabels == "true"
+        if: steps.check_labels.outputs.hasRequiredLabels == 'true'
         run: |
           issue_url="${{ github.event.issue.html_url }}"
           issue_number=$(echo "$issue_url" | grep -oE '[0-9]+$') 
           branch_name="create-pull-request/patch-$issue_number"
           echo "::set-output name=branch_name::$branch_name" 
       - name: Create Pull Request
-        if: steps.check_labels.outputs.hasRequiredLabels == "true"
+        if: steps.check_labels.outputs.hasRequiredLabels == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           branch: ${{ steps.create_branch.outputs.branch_name }}
