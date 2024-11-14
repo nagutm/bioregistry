@@ -22,6 +22,7 @@ from bioregistry.license_standardizer import standardize_license
 from bioregistry.schema import Author, Publication, Resource
 from bioregistry.schema_utils import add_resource
 from bioregistry.utils import removeprefix
+from pydantic import ValidationError
 
 logger = logging.getLogger(__name__)
 
@@ -66,12 +67,16 @@ def process_new_prefix_issue(issue_id: int, resource_data: Dict[str, Any]) -> Op
     :returns: A Resource instance or None if there is an issue that warrants skipping the issue
     """
     prefix = resource_data.pop("prefix").lower()
-    contributor = Author(
-        name=resource_data.pop("contributor_name"),
-        orcid=_pop_orcid(resource_data),
-        email=resource_data.pop("contributor_email", None),
-        github=removeprefix(resource_data.pop("contributor_github"), "@"),
-    )
+    try:
+        contributor = Author(
+            name=resource_data.pop("contributor_name"),
+            orcid=_pop_orcid(resource_data),
+            email=resource_data.pop("contributor_email", None),
+            github=removeprefix(resource_data.pop("contributor_github"), "@"),
+        )
+    except ValidationError:
+        logger.warning("Validation error occured")
+        contributor = None
 
     contact_name = resource_data.pop("contact_name", None)
     contact_orcid = resource_data.pop("contact_orcid", None)
