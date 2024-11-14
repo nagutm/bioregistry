@@ -39,8 +39,7 @@ jobs:
       - name: Update
         id: update
         if: steps.check_labels.outputs.hasRequiredLabels == 'true'
-        run: |
-          python -m bioregistry.gh.new_prefix --github || echo "Validation error occurred, but continuing to create a PR."
+        run: python -m bioregistry.gh.new_prefix --github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Branch
