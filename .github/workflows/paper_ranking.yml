@@ -85,6 +85,8 @@ jobs:
         script: |
           const fs = require('fs');
           const issueNumber = ${{ steps.find-issue.outputs.result }};
+          const startDate = process.env.START_DATE;
+          const endDate = process.env.END_DATE;
           const commitHash = process.env.COMMIT_HASH;
           const rankingFileLink = `https://github.com/${{ github.repository }}/blob/${commitHash}/exports/analyses/paper_ranking/predictions.tsv`;
           const content = fs.readFileSync(`exports/analyses/paper_ranking/predictions.tsv`, 'utf8');
