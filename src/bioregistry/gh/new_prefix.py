@@ -234,9 +234,10 @@ def main(dry: bool, github: bool, force: bool, issue: Optional[int] = None):
     # If an issue number is given, process that specific issue
     if issue is not None:
         click.echo(f"Processing specific issue {issue}")
-        resource = github_client.get_form_data_for_issue(
+        resource_data = github_client.get_form_data_for_issue(
             "nagutm", "bioregistry", issue, remapping=MAPPING
         )
+        resource = process_new_prefix_issue(issue, resource_data)
         if not resource:
             click.echo(f"Issue {issue} could not be processed or does not exist.")
             sys.exit(1)
@@ -282,10 +283,10 @@ def main(dry: bool, github: bool, force: bool, issue: Optional[int] = None):
             sys.exit(0)
 
     for issue_number, resource in issue_to_resource.items():
-        click.echo(f"🚀 Adding resource {resource['prefix']} (#{issue_number})")
+        click.echo(f"🚀 Adding resource {resource.prefix} (#{issue_number})")
         add_resource(resource)
 
-    title = make_title(sorted(resource['prefix'] for resource in issue_to_resource.values()))
+    title = make_title(sorted(resource.prefix for resource in issue_to_resource.values()))
     body = ", ".join(f"Closes #{issue}" for issue in issue_to_resource)
     message = f"{title}\n\n{body}"
     branch_name = str(uuid4())[:8]
