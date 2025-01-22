@@ -282,10 +282,10 @@ def main(dry: bool, github: bool, force: bool, issue: Optional[int] = None):
             sys.exit(0)
 
     for issue_number, resource in issue_to_resource.items():
-        click.echo(f"🚀 Adding resource {resource.prefix} (#{issue_number})")
+        click.echo(f"🚀 Adding resource {resource['prefix']} (#{issue_number})")
         add_resource(resource)
 
-    title = make_title(sorted(resource.prefix for resource in issue_to_resource.values()))
+    title = make_title(sorted(resource['prefix'] for resource in issue_to_resource.values()))
     body = ", ".join(f"Closes #{issue}" for issue in issue_to_resource)
     message = f"{title}\n\n{body}"
     branch_name = str(uuid4())[:8]
