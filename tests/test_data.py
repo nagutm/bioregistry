@@ -128,7 +128,7 @@ class TestRegistry(unittest.TestCase):
                     self.assertNotIn(
                         ss,
                         name.casefold(),
-                        msg="Redundant prefix appears in name",
+                        msg=f"Prefix '{prefix}': Redundant prefix '{ss}' appears in name '{name}'",
                     )
                 preferred_prefix = entry.get_preferred_prefix()
                 if preferred_prefix is not None:
@@ -136,14 +136,14 @@ class TestRegistry(unittest.TestCase):
                         self.assertNotIn(
                             ss,
                             name.casefold(),
-                            msg="Redundant preferred prefix appears in name",
+                            msg=f"Prefix '{prefix}': Redundant preferred prefix '{ss}' appears in name '{name}'",
                         )
                 for alt_prefix in entry.get_synonyms():
                     for ss in self._construct_substrings(alt_prefix):
                         self.assertNotIn(
                             ss,
                             name.casefold(),
-                            msg=f"Redundant alt prefix {alt_prefix} appears in name",
+                            msg=f"Prefix '{prefix}': Redundant preferred prefix '{ss}' appears in name '{name}'",
                         )
 
     def test_name_expansions(self):
