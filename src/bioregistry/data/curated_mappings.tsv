@@ -99,3 +99,103 @@ bioregistry:uniprot.ptm	Not	skos:exactMatch	prefixcommons:ptmswitchboard	orcid:0
 bioregistry:vso	Not	skos:exactMatch	lov:vso	orcid:0000-0003-4423-4370	semapv:ManualMappingCuration	
 bioregistry:wikipathways	Not	skos:exactMatch	aberowl:wikipathways	orcid:0000-0003-4423-4370	semapv:ManualMappingCuration	
 bioregistry:wikipathways	Not	skos:exactMatch	bioportal:wikipathways	orcid:0000-0003-4423-4370	semapv:ManualMappingCuration	
+bioregistry:uniprot	Not	skos:exactMatch	aberowl:UP	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:snap	Not	skos:exactMatch	pathguide:494	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:csp	Not	skos:exactMatch	pathguide:192	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:reaxys	Not	skos:exactMatch	edam:1003	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:upa		skos:exactMatch	ontobee:UPA	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:mpath	Not	skos:exactMatch	integbio:nbdc01568	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:rgd	Not	skos:exactMatch	bioportal:RGD	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:rgd	Not	skos:exactMatch	aberowl:RGD	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:bila		skos:exactMatch	prefixcommons:4dxpress	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:mop	Not	skos:exactMatch	bartoc:20466	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:sigmaaldrich		skos:exactMatch	pathguide:236	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:bind	Not	skos:exactMatch	pathguide:1	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cdd	Not	skos:exactMatch	fairsharing:FAIRsharing.ea287c	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:intact	Not	skos:exactMatch	togoid:Intact	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cco	Not	skos:exactMatch	bartoc:20461	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:snap	Not	skos:exactMatch	prefixcommons:snap	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:edam		skos:exactMatch	ontobee:EDAM	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pso	Not	skos:exactMatch	bioportal:pso	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pfr	Not	skos:exactMatch	fairsharing:FAIRsharing.wqsxtg	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pfr	Not	skos:exactMatch	re3data:r3d100012385	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:door	Not	skos:exactMatch	re3data:r3d100014113	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pride	Not	skos:exactMatch	aberowl:PRIDE	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cdd	Not	skos:exactMatch	re3data:r3d100012041	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:seinet		skos:exactMatch	wikidata:P6209	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ncbigi	Not	skos:exactMatch	go:NCBI_gi	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cpc	Not	skos:exactMatch	fairsharing:FAIRsharing.e08886	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cst	Not	skos:exactMatch	hl7:2.16.840.1.113883.6.62	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ncbitaxon	Not	skos:exactMatch	togoid:Taxonomy	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pathoplant		skos:exactMatch	pathguide:333	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ppdb	Not	skos:exactMatch	fairsharing:FAIRsharing.7k8zh0	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:geo	Not	skos:exactMatch	edam:1147	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:rgd	Not	skos:exactMatch	togoid:Rgd	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:eo	Not	skos:exactMatch	aberowl:EO	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:foaf		skos:exactMatch	bioportal:FOAF	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:trans	Not	skos:exactMatch	fairsharing:FAIRsharing.nygmp7	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:jax	Not	skos:exactMatch	rrid:IMSR_JAX	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:bcrc		skos:exactMatch	cellosaurus:BCRC	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:rhea	Not	skos:exactMatch	togoid:Rhea	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:fbcv		skos:exactMatch	ontobee:FBcv	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pubmed	Not	skos:exactMatch	cheminf:000302	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:inn		skos:exactMatch	wikidata:P2275	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:eol	Not	skos:exactMatch	re3data:r3d100011663	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:igsn	Not	skos:exactMatch	n2t:igsn	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:astd	Not	skos:exactMatch	prefixcommons:astd	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:lcsh	Not	skos:exactMatch	wikidata:P244	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:string		skos:exactMatch	uniprot:DB-0141	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:mdm	Not	skos:exactMatch	bioportal:MDM	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:omim	Not	skos:exactMatch	edam:1153	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:dsmz		skos:exactMatch	cellosaurus:DSMZCellDive	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:conoserver		skos:exactMatch	uniprot:DB-0156	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:dpv	Not	skos:exactMatch	lov:dpv	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:duo		skos:exactMatch	bioportal:DUO	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:smart	Not	skos:exactMatch	togoid:Smart	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:genatlas		skos:exactMatch	uniprot:DB-0027	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cc	Not	skos:exactMatch	aberowl:CC	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:iuphar.receptor		skos:exactMatch	wikidata:P5458	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:icdc	Not	skos:exactMatch	fairsharing:FAIRsharing.d95034	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:dicom	Not	skos:exactMatch	fairsharing:FAIRsharing.b7z8by	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:owl	Not	skos:exactMatch	integbio:nbdc00307	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:tarbase		skos:exactMatch	pathguide:283	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cog		skos:exactMatch	go:COG_Cluster	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pdb	Not	skos:exactMatch	togoid:Pdb	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:icdc	Not	skos:exactMatch	re3data:r3d100010405	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:rgd		skos:exactMatch	edam:2620	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:bind		skos:exactMatch	prefixcommons:bind	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cog		skos:exactMatch	togoid:Cog	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:iuphar.receptor		skos:exactMatch	uniprot:DB-0182	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ogms	Not	skos:exactMatch	bartoc:216	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cog.pathway		skos:exactMatch	go:COG_Pathway	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ipi		skos:exactMatch	integbio:nbdc00911	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ped	Not	skos:exactMatch	integbio:nbdc02490	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:tsc		skos:exactMatch	rrid:TSC	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:cgnc	Not	skos:exactMatch	re3data:r3d100012429	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:apollosv		skos:exactMatch	ontobee:APOLLO_SV	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ped	Not	skos:exactMatch	fairsharing:FAIRsharing.4ef690	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:gemet		skos:exactMatch	bartoc:16	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ccf	Not	skos:exactMatch	re3data:r3d100012657	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:hdl		skos:exactMatch	fairsharing:FAIRsharing.0b7e54	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:knapsack		skos:exactMatch	wikidata:P2064	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:dbsnp		skos:exactMatch	ncbi:dbSNP	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:dpv	Not	skos:exactMatch	integbio:nbdc02410	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pmr		skos:exactMatch	bioportal:PMR	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pmr		skos:exactMatch	aberowl:PMR	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:miriam	Not	skos:exactMatch	fairsharing:FAIRsharing.ap169a	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:gtdb	Not	skos:exactMatch	pathguide:190	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:enm		skos:exactMatch	aberowl:ENM	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:plana		skos:exactMatch	ontobee:PLANA	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:atc	Not	skos:exactMatch	togoid:Atc	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:dictybase		skos:exactMatch	go:dictyBase	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:epd	Not	skos:exactMatch	uniprot:DB-0205	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:interpro		skos:exactMatch	wikidata:P2926	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:unite	Not	skos:exactMatch	edam:2390	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:ccds		skos:exactMatch	uniprot:DB-0187	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:vcard		skos:exactMatch	lov:vcard	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:bcio	Not	skos:exactMatch	aberowl:BCI-O	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:bcio	Not	skos:exactMatch	bioportal:BCI-O	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pmc		skos:exactMatch	cellosaurus:PMCID	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:pmc		skos:exactMatch	go:PMCID	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:wikipedia.en		skos:exactMatch	go:Wikipedia	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
+bioregistry:aaindex		skos:exactMatch	integbio:nbdc00004	orcid:0009-0009-5240-7463	semapv:ManualMappingCuration	
